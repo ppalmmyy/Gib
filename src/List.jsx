@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./List.css"; // <<— เพิ่มบรรทัดนี้
+import "./List.css"; 
 
 export default function List() {
   const [value, setValue] = useState("");
@@ -14,6 +14,7 @@ export default function List() {
     { id: 7, title: "How to Giggle: A Guide to Taking Life Less Seriously", author: "Hannah Berner", image_url: "https://images-na.ssl-images-amazon.com/images/I/81rO3vvG1mL._AC_UL254_SR254,254_.jpg", price: 20.29 },
     { id: 8, title: "Strangers in Time: A World War II Novel", author: "David Baldacci", image_url: "https://images-na.ssl-images-amazon.com/images/I/816QI0pfuRL._AC_UL254_SR254,254_.jpg", price: 17.84 }
   ];
+
 
   const filterList = books.filter(b =>
     b.title.toLowerCase().includes(value.toLowerCase()) ||
